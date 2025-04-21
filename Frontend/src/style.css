@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Custom scrollbar for all scrollable divs */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+    cursor: pointer;
+  }
+  
+  /* Track (the background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+  }
+  
+  /* Handle (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #ffcc80;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb74d;
+  }
+  
+  /* For horizontal scrollbars */
+  ::-webkit-scrollbar-horizontal {
+    height: 8px;
+  }

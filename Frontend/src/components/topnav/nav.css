@@ -1,0 +1,28 @@
+.nav {
+  padding: 0 1.5rem;
+  height: 10%;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo {
+  height: 80%;
+}
+.nav .logo img {
+  height: 100%;
+}
+.nav .links {
+  display: flex;
+  gap: 1rem;
+}
+.nav .links .link {
+  text-decoration: none;
+  color: #a8b3cf;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  font-size: large;
+}
+.nav .links .link:hover {
+  color: #4570b9;
+}

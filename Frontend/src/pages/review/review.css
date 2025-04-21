@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background-color: #2b2b2b;
+  height: 80%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+main .left {
+  background: linear-gradient(to bottom right, #1d1d1d, #2b2b2b);
+  position: relative;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+main .left .review-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #f5d19b;
+  color: #1d1d1d;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.3s ease-in-out;
+}
+main .left .review-btn:hover {
+  background-color: #f5c879;
+  transform: scale(101%);
+}
+main .left .disable {
+  background-color: gray;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+main .right {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #232025, #2b2b2b);
+  padding: 1rem 2rem;
+  overflow: auto;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d4d4d4;
+  font-weight: bold;
+}
+main .left:hover,
+main .right:hover {
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.4); /* Matches the focus color */
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 410px) {
+  main {
+    flex-direction: column;
+  }
+  .right {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,35 @@
+.code:focus {
+  box-shadow: 0 0 5px #4f46e5;
+}
+
+.code {
+  height: 100%;
+  width: 100%;
+  caret-color: white;
+  font-weight: 500;
+  overflow: auto;
+}
+.code ::-moz-placeholder {
+  padding-left: 1rem;
+}
+.code ::placeholder {
+  padding-left: 1rem;
+}
+.code div {
+  min-height: 100%;
+}
+.code div pre {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #2b2b2b;
+  color: whitesmoke;
+  height: 100%;
+}
+.code div textarea {
+  height: 100%;
+}
+.code div textarea:focus {
+  outline: none; /* Removes the focus outline */
+}

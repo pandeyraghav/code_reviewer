@@ -1,0 +1,9 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #2b2b2b;
+  height: 80%;
+  color: whitesmoke;
+}
